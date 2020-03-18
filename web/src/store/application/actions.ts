@@ -11,9 +11,7 @@ export enum ActionType {
 	SetNewTravelTimeDetails = '@@application/new-travel-time',
 	SetPrimaryEducationVisibility = '@@application/primary-education',
 	SetSecondaryEducationVisibility = '@@application/secondary-education',
-	SetOnlyInternationalVisibility = '@@application/international',
-	SetFaqVisibility = '@@application/faqVisiblity',
-	SetDemoVisibility = '@@application/demoVisiblity'
+	SetOnlyInternationalVisibility = '@@application/international'
 }
 
 export function setZoomLevel(level: number) {
@@ -83,24 +81,6 @@ export function setOnlyInternationalVisibility(visible: boolean) {
 	return (dispatch: (action: ActionDispatch) => {}) => {
 		dispatch({
 			type: ActionType.SetOnlyInternationalVisibility,
-			data: visible
-		})
-	}
-}
-
-export function setFaqVisibility(visible: boolean) {
-	return (dispatch: (action: ActionDispatch) => {}) => {
-		dispatch({
-			type: ActionType.SetFaqVisibility,
-			data: visible
-		})
-	}
-}
-
-export function setDemoVisibility(visible: boolean) {
-	return (dispatch: (action: ActionDispatch) => {}) => {
-		dispatch({
-			type: ActionType.SetDemoVisibility,
 			data: visible
 		})
 	}

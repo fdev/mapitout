@@ -4,8 +4,8 @@ import { bindActionCreators, Dispatch } from 'redux'
 import { withGoogleMap, GoogleMap } from 'react-google-maps'
 import styled, {createGlobalStyle} from 'styled-components'
 
-import { ZoomInIcon, ZoomOutIcon, HelpIcon, OndemandVideoIcon } from 'icons'
-import { ReduxState, setZoomLevel, setTooltip, setFaqVisibility, setDemoVisibility, setSchoolDetailPin } from 'store'
+import { ZoomInIcon, ZoomOutIcon } from 'icons'
+import { ReduxState, setZoomLevel, setTooltip, setSchoolDetailPin } from 'store'
 
 import { googleMapsStyles } from '../../constants'
 import { Markers, Pois, Polygons, SchoolDetailPin, Tooltip } from './lib'
@@ -74,8 +74,6 @@ interface StateProps {
 interface DispatchProps {
 	setZoomLevel: typeof setZoomLevel
 	setTooltip: typeof setTooltip
-	setFaqVisibility: typeof setFaqVisibility
-	setDemoVisibility: typeof setDemoVisibility
 	setSchoolDetailPin: typeof setSchoolDetailPin
 }
 interface Props {}
@@ -230,16 +228,6 @@ export class Component extends React.Component<PropsUnion, State> {
 		return (
 			<StyledControls>
 				<StyledControlsGroup>
-					<StyledControlsItem onClick={() => this.props.setFaqVisibility(true)}>
-						<HelpIcon/>
-					</StyledControlsItem>
-				</StyledControlsGroup>
-				<StyledControlsGroup>
-					<StyledControlsItem onClick={() => this.props.setDemoVisibility(true)}>
-						<OndemandVideoIcon/>
-					</StyledControlsItem>
-				</StyledControlsGroup>
-				<StyledControlsGroup>
 					<StyledControlsItem onClick={() => this.zoom('in')}>
 						<ZoomInIcon/>
 					</StyledControlsItem>
@@ -315,8 +303,6 @@ const mapStateToProps = (state: ReduxState) => ({
 const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators({
 	setZoomLevel,
 	setTooltip,
-	setFaqVisibility,
-	setDemoVisibility,
 	setSchoolDetailPin
 }, dispatch)
 

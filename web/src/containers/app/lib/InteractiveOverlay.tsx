@@ -6,9 +6,9 @@ import CopyToClipboard from 'react-copy-to-clipboard'
 
 import { ReduxState, getTravelTimes, removeTravelTime, purgeTravelTimes, setOverlapState } from 'store'
 import { TravelTimeAbstraction } from 'interfaces'
-import { AddIcon, InfoIcon, LayersIcon, LinkIcon, LogoIcon } from 'icons'
+import { AddIcon, InfoIcon, LayersIcon, LinkIcon } from 'icons'
 import { colorList, hexColorToRGBA } from 'utils'
-import { EditTravelTime, Loader, Filter, TravelCard, DemoOverlay, FAQOverlay } from 'components'
+import { EditTravelTime, Loader, Filter, TravelCard } from 'components'
 import { shadows } from '../../../constants'
 
 const StyledUIContainer = styled.div<{menuActive: boolean}>`
@@ -78,13 +78,6 @@ const StyledFilterContainer = styled.div`
 	box-sizing: border-box;
 	
 	padding: 0 1rem;
-`
-
-const StyledLogoContainer = styled.div`
-	position: absolute;
-	top: 0;
-	right: 1rem;
-	z-index: 10;
 `
 
 const StyledActionContainer = styled.div`
@@ -384,11 +377,6 @@ export class Component extends React.Component<PropsUnion, State> {
 		if (!this.props.travelTimes || this.props.travelTimes.length === 0) {
 			return (
 				<>
-					<DemoOverlay/>
-					<FAQOverlay/>
-					<StyledLogoContainer>
-						<LogoIcon/>
-					</StyledLogoContainer>
 					<StyledEntryTravelTimeContainer>
 						{this.props.loading ? <Loader/> : <EditTravelTime
 							ref={this.newEditTravelTimeRef}
@@ -412,11 +400,6 @@ export class Component extends React.Component<PropsUnion, State> {
 
 		return (
 			<>
-				<DemoOverlay/>
-				<FAQOverlay/>
-				<StyledLogoContainer>
-					<LogoIcon/>
-				</StyledLogoContainer>
 				<StyledUIContainer menuActive={!!this.state.currentTravelTimeEditing || this.state.isCurrentlyAddingNewTravelTime}>
 					<StyledUIContainerInner
 						ref={this.scrollableTravelTimesContainer}

@@ -15,7 +15,5 @@ export {
 	setNewTravelTimeDetails,
 	setPrimaryEducationVisibility,
 	setSecondaryEducationVisibility,
-	setOnlyInternationalVisibility,
-	setFaqVisibility,
-	setDemoVisibility
+	setOnlyInternationalVisibility
 } from './application/actions'
