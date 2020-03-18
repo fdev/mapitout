@@ -1,3 +1,5 @@
+**This is a public copy of the MapItOut web application (https://mapitout.iamsterdam.com), stripped from the logo's, links, FAQ and the Tutorial video. This repository can be cloned and used by other parties.**
+
 ![MapItOut logo](/docs/logo.png)
 
 MapItOut is a tool to calculate how far you can travel with certain types of transport within Amsterdam and its surrounding cities/municipalities. It also shows POIs such as educational institutes.
