@@ -1,4 +1,6 @@
-**This is a public copy of the MapItOut web application (https://mapitout.iamsterdam.com), stripped from the logo's, links, FAQ and the Tutorial video. This repository can be cloned and used by other parties.**
+**This is a public copy of the MapItOut web application (https://mapitout.iamsterdam.com), stripped from the logo's, links, FAQ and the Tutorial video. This repository can be cloned and used by other parties, under the conditions of the GNU Lesser General Public License 3.0. The following limitations apply:**
+**- Do not utilize the name MapitOut**
+**- Refer to the original source material (this Github repository and the web application adddress)**
 
 ![MapItOut logo](/docs/logo.png)
 
