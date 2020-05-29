@@ -2,7 +2,8 @@
 
 **- Do not utilize the name MapitOut**
 
-**- Refer to the original source material (this Github repository and the web application adddress)**
+**- Refer to the original source material (this Github repository and the web application address)**
+
 
 ![MapItOut logo](/docs/logo.png)
 
