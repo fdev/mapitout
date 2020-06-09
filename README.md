@@ -4,6 +4,7 @@
 
 **- Refer to the original source material (this Github repository and the web application address), with the text: "Based on the open-source MapitOut application"**
 
+# Description
 
 MapitOut is a tool to calculate how far you can travel with certain types of transport within Amsterdam and its surrounding cities/municipalities. It also shows POIs such as educational institutes.
   
