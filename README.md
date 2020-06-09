@@ -1,13 +1,11 @@
-**This is a public copy of the MapItOut web application (https://mapitout.iamsterdam.com), stripped from the logo's, links, FAQ and the Tutorial video. This repository can be cloned and used by other parties, under the conditions of the GNU Lesser General Public License 3.0. The following limitations apply:**
+**This is a public copy of the MapitOut web application (https://mapitout.iamsterdam.com), stripped from the logo's, links, FAQ and the Tutorial video. This repository can be cloned and used by other parties, under the conditions of the GNU Lesser General Public License 3.0. The following conditions apply:**
 
-**- Do not utilize the name MapitOut**
+**- Do not utilize the name MapitOut or the logo**
 
-**- Refer to the original source material (this Github repository and the web application address)**
+**- Refer to the original source material (this Github repository and the web application address), with the text: "Based on the open-source MapitOut application"**
 
 
-![MapItOut logo](/docs/logo.png)
-
-MapItOut is a tool to calculate how far you can travel with certain types of transport within Amsterdam and its surrounding cities/municipalities. It also shows POIs such as educational institutes.
+MapitOut is a tool to calculate how far you can travel with certain types of transport within Amsterdam and its surrounding cities/municipalities. It also shows POIs such as educational institutes.
   
 The current tech stack provides coverage within The Netherlands but contains some "bias" towards the Amsterdam region. Such as the starting coordinates on launch, and the Google Places search being targeted towards the Amsterdam region. 
 
